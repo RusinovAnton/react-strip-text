@@ -82,7 +82,7 @@ class StripText extends Component {
 
     return ( 
       <div className={classNames('ReactStripText', {
-          'ReactStripText--cut': cut && canBeCut,
+          'ReactStripText--cut': cut && this.canBeCut(),
           'ReactStripText--toggleable': toggleable,
         })}
       > 
